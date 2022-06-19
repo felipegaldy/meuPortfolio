@@ -38,10 +38,30 @@ de usuário complexa, e permite a reutilização de código existente sem copiar
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+
 /*Sessão Menu*/
 
 section.menu{
-
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__logo{
+    display: flex;
+    padding: 4px;
+    align-items: center;
+}
+.menu__title{
+    margin-left: 8px;
+}
+.menu__list{
+    display: flex;
+    padding: 4px;
+}
+.menu__list__item{
+    margin: 0 8px;
+    padding: 8px;
 }
 
 /*Sessão Title*/
