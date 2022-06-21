@@ -7,11 +7,13 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --cor-de-texto: #464646;
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
+    color: var(--cor-de-texto);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
@@ -46,6 +48,8 @@ section.menu{
     padding: 0 2rem;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
+    color: var(--cor-de-texto);
 }
 .menu__logo{
     display: flex;
@@ -62,18 +66,77 @@ section.menu{
 .menu__list__item{
     margin: 0 8px;
     padding: 8px;
-}
+    color: var(--cor-de-texto);
+}   
 
 /*Sessão Title*/
 
 section.title{
-
+    display: flex;
+    padding: 0 2rem;
+}
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.title__profile{
+    border-radius: 50%;
+    height: 85%;
+}
+.title__bio{
+    font-size: 52px;
+    color: var(--cor-de-texto);
+}
+.title__subsection{
+    font-size: 22;
+    font-weight: 500;
+    color: var(--cor-de-texto);
+}
+.title__network{
+    display: flex;
+    padding: 0;
+}
+.title__network__item{
+    color: var(--cor-de-texto);
+    margin-right: 32px;
 }
 
 /*Sessão About*/
 
 section.about{
+    background-color: #EAF2FD;
+    padding: 64px 0;
+}
 
+.about__container{
+    padding: 0 2rem; 
+}
+.about__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cor-de-texto);
+}
+.about__paragraph{
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+/*Sessão Skills*/
+section.skills{
+    padding: 0 2rem;
+}
+.skills__title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
 
 /*Sessão Hobbies*/
