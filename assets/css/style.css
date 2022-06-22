@@ -136,14 +136,52 @@ section.skills{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
+}
+.skills__box{
+    background-color: white;
+    width: 176px;
+    height: 174px;
+    display: flex;
+    margin: 8px;
+}
+.skills__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1rem;   
 }
 
 /*Sessão Hobbies*/
 
 section.hobbies{
-    
+    padding: 0 2rem
 }
+.hobbies__title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hobbies__box{
+    background-color: white;
+    width: 176px;
+    height: 174px;
+    display: flex;
+    margin: 8px;
+}
+.hobbies__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1rem;   
+}
+/*
+ATENÇAO ARRUMAR MARGIN BOTTOM - TAMANHO  AREA DE SKILLS E HOBBIES
+*/
 
 /* Experiência Acadêmica*/
 
@@ -166,7 +204,7 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   
+
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
