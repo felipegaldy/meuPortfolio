@@ -241,7 +241,12 @@ section.academic{
 /* experiência*/
 
 section.experience{
-
+    padding: 0 2rem;
+}
+.experience__section__title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 /*Contato*/
