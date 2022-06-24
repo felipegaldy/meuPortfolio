@@ -126,6 +126,7 @@ section.about{
 /*Sessão Skills*/
 section.skills{
     padding: 0 2rem;
+    margin-bottom: 88px;
 }
 .skills__title{
     text-align: center;
@@ -154,7 +155,8 @@ section.skills{
 /*Sessão Hobbies*/
 
 section.hobbies{
-    padding: 0 2rem
+    padding: 0 2rem;
+    margin-bottom: 88px;
 }
 .hobbies__title{
     text-align: center;
@@ -179,15 +181,62 @@ section.hobbies{
     justify-content: flex-end;
     padding: 0 1rem;   
 }
-/*
-ATENÇAO ARRUMAR MARGIN BOTTOM - TAMANHO  AREA DE SKILLS E HOBBIES
-*/
+
 
 /* Experiência Acadêmica*/
 
 section.academic{
-
+    padding-top: 82px;
+    padding-bottom: 108px;
+    background: #EAF2FD;
+    box-sizing: border-box;
 }
+.academic__title{
+    text-align: center;
+    margin-bottom: 32px;
+}
+.academic__courses{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.academic__courses__box{
+    display: flex;
+    flex-direction: column;
+}
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 ;
+}
+.academic__courses__item__img{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 286px;
+}
+.academic__courses__item__title{
+    width: fit-content;
+    font-weight: 700;
+    font-size: 22px;
+}
+.academic__courses__item__title h4{
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+.academic__courses__item__subtitle{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 16px;
+}
+.academic__courses__item__subtitle p{
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
 
 /* experiência*/
 
