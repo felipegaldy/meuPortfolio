@@ -4,11 +4,13 @@
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
    --cor-de-texto: #464646;
+   --cor-azul: #2A7AE4;
+   --cor-red-one: #cc2c09;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background: var(--cor-de-fundo);
     color: var(--cor-de-texto);
     font-family: 'Raleway';
     margin: 0;
@@ -36,7 +38,6 @@ de usuário complexa, e permite a reutilização de código existente sem copiar
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
-
 /*Sessão Menu*/
 
 section.menu{
@@ -63,8 +64,16 @@ section.menu{
     margin: 0 8px;
     padding: 8px;
     color: var(--cor-de-texto);
-}   
+}
+.menu__list__item__contato{
+    display: none;
+}
 
+/* Efeitos do menu */
+.menu__list__item:hover{
+    font-weight: 700;
+    border-bottom: 1px solid #2A7AE4;
+}
 /*Sessão Title*/
 
 section.title{
@@ -97,7 +106,10 @@ section.title{
     color: var(--cor-de-texto);
     margin-right: 32px;
 }
-
+.title__network__item:hover{
+    font-weight: 700;
+    border-bottom: 1px solid #2A7AE4;
+}
 /*Sessão About*/
 
 section.about{
@@ -426,7 +438,7 @@ section.footer{
     transition: color .4s ease;
 }
 .footer__socials a:hover i{
-        text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px gray;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px gray;
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
@@ -448,7 +460,6 @@ utilize como referência os breakpoints @media abaixo*/
 /*Expeirência profissional*/
 
 }
-
 /*Mobile*/
 @media (min-width: 425px) {
 
@@ -461,13 +472,44 @@ utilize como referência os breakpoints @media abaixo*/
 /*Skills*/
 
 /*Hobbies*/
- 
+
 /*Formação Acadêmica*/
 
 /*Experiência Profissional*/
 
- /*Contato*/
+/*Contato*/
 
 /*Footer*/
 
+}
+/*Mobile*/
+@media (min-width: 300px) {
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+/*Contato*/
+
+/*Footer*/
+
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    opacity: 0.9;
 }
