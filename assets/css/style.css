@@ -84,17 +84,19 @@ section.title{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    
 }
 .title__profile{
     border-radius: 50%;
     height: 85%;
+    
 }
 .title__bio{
     font-size: 52px;
     color: var(--cor-de-texto);
 }
 .title__subsection{
-    font-size: 22;
+    font-size: 22px;
     font-weight: 500;
     color: var(--cor-de-texto);
 }
@@ -192,7 +194,6 @@ section.hobbies{
 
 
 /* Experiência Acadêmica*/
-
 section.academic{
     padding-top: 82px;
     padding-bottom: 108px;
@@ -258,7 +259,7 @@ section.experience{
     font-weight: 700;
 }
 .experiencie__box{
-    padding: 0 2rem;
+    padding: 0 ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -272,20 +273,19 @@ section.experience{
 .experience__title {
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
     padding: 0;
     margin: 0;
 }
 .experience__text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    margin: 1px;
     margin-bottom: 12px;
     padding: 0;
 }
 .experience__description{
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 .experiencia__botao--repo{
     font-weight: 400;
@@ -301,6 +301,7 @@ section.experience{
     padding: 16px;
     width: 105px;
     height: 51px;
+    margin-right: 8px;
 }
 .experiencia__botao--demo{
     font-size: 16px;
@@ -318,7 +319,7 @@ section.experience{
 }
 .box__2{
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /*Contato*/
@@ -336,13 +337,10 @@ section.formcontato{
     display: flex;
     justify-content: center;
     display: flex;
-    flex-direction: row;
-    padding: 64px 0px 0px;
-    gap: 16px;
 }
 .formcontato__img{
-    width: 464px;
-    height: 593px;
+    margin-right: 16px;
+    height: max-content;
 }
 .formcontato__text{
     display: flex;
@@ -364,6 +362,7 @@ section.formcontato{
     line-height: 19px;
     padding: 0;
     margin: 0;
+    width: 90%;
 }
 .formcontato__form{
     display: flex;
@@ -373,19 +372,20 @@ section.formcontato{
     gap: 32px;
 }
 .formcontato__input{
-        border: none;
-        border-radius: 4px;
-        padding: 10px;
-        width: 97%;
-        height: 40px;
-        font-weight: 400;
-        font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 32px;
 }
 .formcontato__textarea {
     border: none;
     border-radius: 4px;
     padding: 10px;
-    width: 97%;
+    width: 90%;
     overflow: auto;
     outline: none;
     -webkit-box-shadow: none;
@@ -393,10 +393,9 @@ section.formcontato{
     box-shadow: none;
     resize: none;
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    margin-bottom: 20px;
 }
 .formcontato__botao{
     padding: 16px;
@@ -441,69 +440,6 @@ section.footer{
     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px gray;
 }
 
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
-}
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
-/*Contato*/
-
-/*Footer*/
-
-}
-/*Mobile*/
-@media (min-width: 300px) {
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
-/*Contato*/
-
-/*Footer*/
-
-}
-
 button:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -513,3 +449,6 @@ button:active {
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     opacity: 0.9;
 }
+
+
+
