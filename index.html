@@ -254,14 +254,15 @@
                         <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                     </div>
                     <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$">
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email" required>
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required minlength="3">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required minlength="5"></textarea>
                         <button class="formcontato__botao">Enviar mensagem</button>
                     </form>
                 </div>
             </div>
+
         </section>
 
         <!-- Sessão de Footer/Rodapé-->
